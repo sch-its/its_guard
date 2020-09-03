@@ -108,6 +108,9 @@ public class Tess{
         }
 
         try {
+            
+            checkFile();
+            
             TessBaseAPI tessBaseAPI = new TessBaseAPI();
             tessBaseAPI.init(DATA_PATH, lang);
             //tessBaseAPI.setVariable(TessBaseAPI.VAR_CHAR_BLACKLIST, "$#@%&*()_+=÷-[]}{;'\"\\|`," +
